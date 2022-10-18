@@ -1,0 +1,16 @@
+@use "../styles/global.scss" as var;
+
+.button {
+  padding: var.$stepSmall;
+  border-radius: var.$stepSmall;
+  font-size: var.$mainFontSize;
+  color: white;
+  border-color: var.$normalColor;
+  background: linear-gradient(180deg, var.$normalColorLight, var.$normalColor);
+  cursor: pointer;
+
+  &.disabled {
+      border-color: var.$midGray;
+      background: linear-gradient(180deg, var.$lightGray, var.$midGray);
+    }
+}

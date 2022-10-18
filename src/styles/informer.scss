@@ -1,0 +1,9 @@
+@use "../styles/global.scss" as var;
+
+.informer__data {
+  color: #000;
+
+  &:not(:first-child){
+    margin-top: var.$stepSmall;
+  }
+}

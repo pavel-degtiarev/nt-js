@@ -1,0 +1,56 @@
+@use "../styles/global.scss" as var;
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: var.$stepBig;
+}
+
+.fields-group {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.fields-group__legend {
+  margin-bottom: var.$stepTiny;
+}
+
+.select-time {
+  &__selector {
+    flex: 1 1 50%;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: var.$mainFontSize;
+
+  &-row {
+    flex-direction: row;
+  }
+}
+
+.field__input,
+.field__select {
+  padding: var.$stepSmall;
+  border-radius: var.$stepSmall;
+  border-color: var.$midGray;
+  text-overflow: ellipsis;
+}
+
+.field__select {
+  height: 37px;
+}
+
+.field__label {
+  padding: var.$stepTiny;
+  color: var.$darkGray;
+}
+
+.label-notice {
+  color: #000;
+}

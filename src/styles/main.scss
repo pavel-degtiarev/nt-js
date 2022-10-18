@@ -1,0 +1,46 @@
+@use "../styles/global.scss" as var;
+
+:root {
+  font-family: sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.container {
+  margin: var.$stepBig auto;
+  padding: var.$stepBig;
+  border-radius: var.$stepMed;
+  box-shadow: 0px var.$stepSmall var.$stepBig var.$lightGray;
+  width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var.$stepBig * 1.5);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
